@@ -1,6 +1,7 @@
-\ProvidesPackageRCS $Header: beamerouterthemerwth.sty,v 1.9.1 2018/03/31 23:27:30 $
+\ProvidesPackageRCS $Header: beamerouterthemerwth.sty,v 1.9.2 2023/02/10 10:19:23 $
 % Copyright 2013 by Georg Wassen
 % Copyright 2016-2018 by Gerrit Toehgiono
+% Copyright 2023 by Shouran Ma (OChicken@github.com)
 %
 % This file may be distributed and/or modified
 %
@@ -125,7 +126,7 @@
       \hskip16.5pt\usebeamerfont{title in head/foot}\insertshorttitle%
       \vskip0pt
       \hskip16.5pt\usebeamerfont{author in head/foot}\insertshortauthor%
-      \expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~|~\insertshortinstitute}%
+      \expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~|~\@typ}%
       \vskip1.5pt
       \hskip16.5pt\expandafter\beamer@ifempty\expandafter{\beamer@shortdate}{}{\insertshortdate}%
   \end{beamercolorbox}%
