@@ -25,6 +25,36 @@
 %%
 \logo{\includegraphics[height=8mm]{logos/rwth}}
 
+%% Makros für die verschiedenen Informationen der Titelseite
+
+\def\Typ#1{%
+  \gdef\@typ{#1}%
+}%
+\gdef\@typ{Studienarbeit/ Diplomarbeit}
+
+\def\GradBearbeiter#1{%
+  \gdef\@GradBearbeiter{#1}%
+}%
+\gdef\@GradBearbeiter{cand. Ing./ B. Sc.}
+
+\def\GradBetreuer#1{%
+  \gdef\@GradBetreuer{#1}%
+}%
+\gdef\@GradBetreuer{Dipl.-Ing./ M. Sc.}
+
+\def\Betreuer#1{%
+  \gdef\@betreuer{#1}%
+}%
+\gdef\@betreuer{Betreuer}
+
+\def\ExBetreuer#1{%
+  \gdef\@exbetreuer{#1}%
+}%
+\gdef\@exbetreuer{Externer Betreuer}
+
+\def\GradEXBetreuer#1{%
+  \gdef\@GradEXBetreuer{#1}%
+}%
 
 %%
 %% add new commands to set web and email address
