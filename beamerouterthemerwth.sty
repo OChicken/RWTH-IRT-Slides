@@ -39,39 +39,43 @@
 
 \defbeamertemplate*{title page}{rwth theme}
 {
-  \hbox{%
-    \begin{beamercolorbox}[sep=0cm,wd=.525\paperwidth]{frametitle}
-      \begin{minipage}[t]{.5\paperwidth}
-        \raggedright\vskip-7.5mm
-      \end{minipage}
-    \end{beamercolorbox}%
-    \begin{minipage}[t]{.4\paperwidth}
-      \begin{beamercolorbox}[sep=0cm,wd=.4\paperwidth,right]{logo}
-        \insertlogo\hspace{2mm}
-      \end{beamercolorbox}%
-    \end{minipage}
-  }
+  \vspace{-2mm}
+  \hspace{-11.2mm}
+  \begin{beamercolorbox}[sep=0pt]{frametitle}
+    \insertlogo
+  \end{beamercolorbox}
+  \vspace{6mm}
 
-  \vspace{25mm}
+  \hspace{-6.5mm}
   \begin {beamercolorbox}[sep=0pt]{title}
-  \usebeamerfont{title in title page}\inserttitle
+    \usebeamerfont{title in title page}\inserttitle
   \end {beamercolorbox}
-  \vfill
+  \vspace{4mm}
+
+  \hspace{-7.5mm}
   \begin {beamercolorbox}[sep=0pt]{subtitle}
-  \usebeamerfont{subtitle in title page}\insertsubtitle
+    \usebeamerfont{subtitle in title page} \@typ~|~\insertdate
   \end {beamercolorbox}
-  \vfill
+  \vspace{6.5mm}
+
+  \hspace{-6.5mm}
   \begin {beamercolorbox}[sep=0pt,]{author}
-  \usebeamerfont{author in title page}\insertauthor
+    \usebeamerfont{author in title page}\insertauthor
   \end {beamercolorbox}
-  \vspace{2ex}
-  \begin {beamercolorbox}[sep=0pt,]{institute}
-  \usebeamerfont{institute in title page}\insertinstitute
+  \vskip2mm
+
+  \hspace{-7.5mm}
+  \begin {beamercolorbox}[sep=0pt,]{author}
+    \usebeamerfont{author in title page} Supervisor: \@betreuer, \@GradBetreuer
+    \vskip1pt
+    \usebeamerfont{author in title page} \hspace{20.7mm} \@exbetreuer, \@GradEXBetreuer
   \end {beamercolorbox}
-  \begin {beamercolorbox}[sep=0pt,]{date}
-  \usebeamerfont{date in title page}\insertdate
-  \end {beamercolorbox}
-  \vspace{2ex}
+  \vspace{-1mm}
+
+  \hfill%
+  \begin{beamercolorbox}[sep=2pt,wd=.3\paperwidth]{title in head/foot}%
+    \ifx\printinstlogo\@empty{}\else{\flushright\hfill\printinstlogo}\fi%
+  \end{beamercolorbox}%
 }
 
 
