@@ -110,36 +110,25 @@
 
 \defbeamertemplate*{footline}{rwth theme}
 {
-  \centerline{\color{black!50}{\rule{0.95\textwidth}{.3pt}}}
-  \vspace{-5.3mm}
+  \centerline{\color{black!50}{\rule{0.953\textwidth}{.3pt}}}
+  \vspace{-3.5mm}
   \leavevmode%
-  \centerline{\color{black!50}{\rule{0.95\textwidth}{.5pt}}}
-  \begin{beamercolorbox}[wd=8mm,ht=7mm,sep=4pt,right]{framenumber in head/foot}
+  \begin{beamercolorbox}[wd=6.8mm,ht=4.1mm,sep=1pt,right]{framenumber in head/foot}
     \usebeamerfont{framenumber}\insertframenumber{}
+    \vspace{1mm}
   \end{beamercolorbox}
   \begin{beamercolorbox}[sep=2pt,wd=.6\paperwidth,ht=2.25ex,dp=1ex]{title in head/foot}%
-    \begin{minipage}[b]{\columnwidth}
-    %\hbox{%
-      \usebeamerfont{title in head/foot}\insertshorttitle%
-    %}
-    \end{minipage}
-    %\par\vspace{1pt}%
-    %\hbox{%
-      \hskip2pt\usebeamercolor[fg]{author in head/foot}\usebeamerfont{author in head/foot}\insertshortauthor%
+      \hskip16.5pt\usebeamerfont{title in head/foot}\insertshorttitle%
+      \vskip0pt
+      \hskip16.5pt\usebeamerfont{author in head/foot}\insertshortauthor%
       \expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~|~\insertshortinstitute}%
-      \expandafter\beamer@ifempty\expandafter{\beamer@shortdate}{}{~|~\insertshortdate}%
-      \hskip5mm%
-    %}%
+      \vskip1.5pt
+      \hskip16.5pt\expandafter\beamer@ifempty\expandafter{\beamer@shortdate}{}{\insertshortdate}%
   \end{beamercolorbox}%
   \hfill%
   \begin{beamercolorbox}[sep=2pt,wd=.3\paperwidth]{title in head/foot}%
-  \begin{minipage}[b]{.95\linewidth}
     \ifx\printinstlogo\@empty{}\else{\flushright\hfill\printinstlogo}\fi%
-    %% If navigation symbols requisited
-    %\ifx\printinstlogo\@empty{\usebeamertemplate***{navigation symbols}}\else{\printinstlogo}\fi%
-  \end{minipage}
   \end{beamercolorbox}%
-  \vskip0pt%
 }
 
 %\defbeamertemplate*{footline}{rwth theme}
