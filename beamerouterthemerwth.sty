@@ -99,24 +99,12 @@
 
 \defbeamertemplate*{headline}{rwth theme}[1][left]
 {
-  \vskip2mm%
-  \hbox{%
-    \begin{beamercolorbox}[sep=0cm,wd=1cm]{frametitle}
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[sep=0cm,wd=.525\paperwidth]{frametitle}
-      \begin{minipage}[t]{.6\paperwidth}
-        \raggedright\vskip-7.5mm
-        \usebeamerfont{frametitle}\ifx\insertsubsection\@empty\else{\insertsubsection\par}\fi\insertframetitle
-      \end{minipage}
-    \end{beamercolorbox}%
-    \begin{minipage}[t]{.4\paperwidth}
-      \begin{beamercolorbox}[sep=0cm,wd=.4\paperwidth,right]{logo}
-        \insertlogo\hspace{2mm}
-      \end{beamercolorbox}%
-    \end{minipage}
-  }
-  \vskip2.5mm
-  \centerline{\color{black!50}{\rule{0.95\textwidth}{.5pt}}}
+  \vskip6mm%
+  \begin{beamercolorbox}[sep=0cm,wd=1\textwidth]{frametitle}
+    \hskip15pt\usebeamerfont{frametitle}\ifx\insertsubsection\@empty\else{\insertsubsection\par}\fi\insertframetitle
+  \end{beamercolorbox}
+  \vskip0.96mm
+  \centerline{\color{black!50}{\rule{0.953\textwidth}{.3pt}}}
 }
 
 
