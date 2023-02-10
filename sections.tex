@@ -1,6 +1,17 @@
 %% Sections
 
 %%
+%% Table of contents (automatically collects all \section{} and \subsection{} entries).
+%% (run pdflatex multiple times to get all cross references correct)
+%%
+\section*{Contents}
+\begin{frame}[t]{Outline}
+%\begin{multicols}{2}
+  \tableofcontents[hideallsubsections]
+%\end{multicols}
+\end{frame}
+
+%%
 %% Use \section{} to divide your presentation into chapters.
 %% Each \section{} generates a section frame automatically.
 %% The variant \section*{} will not appear in the table of contents and will not generate a section frame
@@ -15,16 +26,6 @@
 
 \begin{frame}{Motivation}
   This \LaTeX{} Beamer template imitates the layout of the old official RWTH presentation template.
-\end{frame}
-
-%%
-%% Table of contents (automatically collects all \section{} and \subsection{} entries).
-%% (run pdflatex multiple times to get all cross references correct)
-%%
-\begin{frame}[t]{Agenda}
-%\begin{multicols}{2}
-  \tableofcontents[hideallsubsections]
-%\end{multicols}
 \end{frame}
 
 \section{Example slides}
