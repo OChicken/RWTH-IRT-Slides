@@ -13,7 +13,7 @@
 
 
 \RequirePackage{calc}       % needed for calculations of lengths
-
+\RequirePackage{marvosym}
 
 \mode<presentation>
 
@@ -106,7 +106,7 @@
 {
   \vskip6mm%
   \begin{beamercolorbox}[sep=0cm,wd=1\textwidth]{frametitle}
-    \hskip15pt\usebeamerfont{frametitle}\ifx\insertsubsection\@empty\else{\insertsubsection\ {\ttfamily->}\ }\fi\insertframetitle
+    \hskip15pt\usebeamerfont{frametitle}\ifx\insertsubsection\@empty\else{\insertsubsection\ \MVRightarrow{}\ }\fi\insertframetitle
   \end{beamercolorbox}
   \vskip0.96mm
   \centerline{\color{black!50}{\rule{0.953\textwidth}{.3pt}}}
